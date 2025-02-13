@@ -1,0 +1,73 @@
+
+
+.header-main{
+    margin-top: 10px;
+    border-radius: 40px;
+    color: red;
+    width: 95vw;
+    display: flex;
+    gap: 100px;   
+    justify-content: space-between;   
+    align-items: center; 
+    height: 10vh;
+    background-color: black;
+}
+.left img{
+    margin-left: 20px;
+    width: 250px;
+    height: 60px;
+}
+
+
+.right{ 
+    color: aliceblue;
+    padding-top: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+.right .aTag{
+    padding-top:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right a {
+    text-decoration: none;  
+    cursor: pointer; /* Ensures it still behaves like a link */
+    color: white; /* Set your preferred color */
+    padding: 5px 10px; /* Optional spacing */
+}
+
+.right a{
+    transition: color 0.5s ease;
+}
+.right a:hover {
+    color: gold; /* Change color on hover */
+}
+.right a svg{
+    width: 80px;
+    height: 30px;
+}
+.right button{
+    background-color: gold;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    width: 100px;
+    border-radius: 50px;
+}
+
+.right button{
+    transition: background-color 0.5s ease , color 0.5s ease;
+}
+.right button:hover{
+    background-color: white;
+    color: red;
+
+}
