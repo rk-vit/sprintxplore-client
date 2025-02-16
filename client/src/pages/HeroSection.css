@@ -1,0 +1,30 @@
+.Hero-main{
+     display: flex;
+     height: 100vh;
+     width: 100vw;
+}
+
+.tagLine{
+     display: flex;
+     flex-direction: column;
+     width: 60vw;
+     height: 100vh;
+     text-align: center;
+     padding-top: 10px;
+     
+     justify-content: center;
+     font:popins;
+     font-style: italic;
+
+}
+
+
+.tagLine button{
+     color: black;
+     width: 100px;
+     height: 50px;
+     align-self: center;
+     border-radius: 10px;
+     border: 1px solid white;
+     background-color: gold;
+}

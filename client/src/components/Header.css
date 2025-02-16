@@ -1,25 +1,27 @@
 
 
 .header-main{
-    margin-top: 10px;
-    border-radius: 40px;
-    color: red;
-    width: 95vw;
+    padding: 20px;
+    color: black;
+    width: 100vw;
     display: flex;
     gap: 100px;   
     justify-content: space-between;   
     align-items: center; 
     height: 10vh;
-    background-color: black;
+    background-color: white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); 
+
 }
 .left img{
     margin-left: 20px;
-    width: 250px;
+    width: 200px;
     height: 60px;
 }
 
 
 .right{ 
+    
     color: aliceblue;
     padding-top: auto;
     padding-left: 10px;
@@ -27,28 +29,39 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 
 }
 .right .aTag{
+    font-weight: 500;
     padding-top:20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .right a {
+    position: relative;
     text-decoration: none;  
-    cursor: pointer; /* Ensures it still behaves like a link */
-    color: white; /* Set your preferred color */
-    padding: 5px 10px; /* Optional spacing */
-}
-
-.right a{
+    color: black; 
+    padding: 10px;
+    font-size: 20px;
     transition: color 0.5s ease;
 }
+
+.right a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    background-color:  goldenrod; /* Color of underline */
+    transition: width 0.5s ease-in-out;
+}
+
 .right a:hover {
-    color: gold; /* Change color on hover */
+    color: goldenrod;
+}
+
+.right a:hover::after {
+    width: 100%; /* Expands the underline from left to right */
 }
 .right a svg{
     width: 80px;
@@ -60,7 +73,8 @@
     padding: 0;
     margin: 0;
     width: 100px;
-    border-radius: 50px;
+    border: 2px solid white;
+    border-radius: 10px;
 }
 
 .right button{
@@ -68,6 +82,7 @@
 }
 .right button:hover{
     background-color: white;
-    color: red;
+    color: black;
 
 }
+

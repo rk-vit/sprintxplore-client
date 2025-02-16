@@ -1,0 +1,29 @@
+.about-main{
+    background-image: url("./images/Aboutus.jpg");
+    background-size: cover;
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 30px;
+}
+
+
+.text-content{
+    align-self: center;
+    text-align: center;
+}
+.about-main h1{
+    align-self: flex-start;
+    color:  gold;
+    font-weight: 500;
+}
+
+.about-main h2{
+    color: white;
+    width: 600px;
+    align-self: center;
+}
