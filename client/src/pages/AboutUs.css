@@ -1,29 +1,36 @@
-.about-main{
-    background-image: url("./images/Aboutus.jpg");
-    background-size: cover;
-    background-position: center; /* Centers the image */
+.about-main {
     background-repeat: no-repeat;
+    background-color: whitesmoke;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 100vw;
     height: 100vh;
-    padding-top: 30px;
 }
 
-
-.text-content{
-    align-self: center;
-    text-align: center;
-}
-.about-main h1{
-    align-self: flex-start;
-    color:  gold;
-    font-weight: 500;
+.text-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;  /* Makes it 80% of viewport width */
+    height: 80vh;
+    border-radius: 10px; /* Makes it 60% of viewport height */
 }
 
-.about-main h2{
-    color: white;
-    width: 600px;
-    align-self: center;
+.carousel {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-inner,
+.carousel-item {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.carousel-item svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

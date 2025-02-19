@@ -15,7 +15,9 @@ function App() {
       <div className='app-hero'>
         <HeroSection/>
       </div>
-     
+      <div className='app-about'>
+        <AboutUs/>
+      </div>
     </div>
     
   )
