@@ -5,6 +5,7 @@ export const AboutUs = ()=>{
     return(
         <div className="about-main">
             <div className="text-content">
+                <h1>About us</h1>
                 <Carousel/>
             </div>
         </div>

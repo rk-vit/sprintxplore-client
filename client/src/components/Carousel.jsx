@@ -13,8 +13,8 @@ export const Carousel = () => {
         <img src="https://picsum.photos/id/237/800/400" className="d-block w-100" alt="Slide 1" />
           <div className="container">
             <div className="carousel-caption text-start">
-              <h1>Example headline.</h1>
-              <p className="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
+              <h1>We are SprintXplore.</h1>
+              <p className="opacity-75">we are passionate about empowering enthusiastic individuals with cutting-edge technical skills and advanced technology solutions for product development and operational consultations.</p>
               <p><a className="btn btn-lg btn-primary" href="#">Sign up today</a></p>
             </div>
           </div>
@@ -23,8 +23,8 @@ export const Carousel = () => {
         <img src="https://picsum.photos/id/247/800/400" className="d-block w-100" alt="Slide 3" />
           <div className="container">
             <div className="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Some representative placeholder content for the second slide of the carousel.</p>
+              <h1>Our journey</h1>
+              <p> began with a simple yet powerful approach.</p>
               <p><a className="btn btn-lg btn-primary" href="#">Learn more</a></p>
             </div>
           </div>
@@ -33,8 +33,8 @@ export const Carousel = () => {
         <img src="https://picsum.photos/seed/picsum/800/400" className="d-block w-100" alt="Slide 2" />
           <div className="container">
             <div className="carousel-caption text-end">
-              <h1>One more for good measure.</h1>
-              <p>Some representative placeholder content for the third slide of this carousel.</p>
+              <h1>We with a team of </h1>
+              <p>budding like minded people are now together in a focus to build a better system by serving technology as key value.</p>
               <p><a className="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
             </div>
           </div>

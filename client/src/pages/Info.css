@@ -1,0 +1,56 @@
+.Info-main {
+    background-color: #F4ED5E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centers both sections */
+    width: 100vw;
+    height: 110vh; /* Now fits within one screen */
+    padding-top: 30px;
+}
+
+.sectionIntro {
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+
+.sec1, .sec2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    height: 40vh; /* Reduced height to fit within 100vh */
+}
+
+.sec2 {
+    margin-top: 4vh; /* Adds gap between sections */
+}
+
+.sec1-left, .sec2-right {
+    width: 33vw; /* Slightly reduced for better balance */
+    text-align: left;
+}
+
+.sec1-left p, .sec2-right p {
+    font-size: 18px; /* Reduced for better spacing */
+}
+
+.sec1-right, .sec2-left {
+    width: 37vw; /* Adjusted for images */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.img1 {
+    width: 100%;
+    max-width: 25vw; /* Slightly reduced */
+}
+
+.img2 {
+    position: absolute;
+    top: 0;
+    width: 60%; /* Adjusted to fit better */
+}
