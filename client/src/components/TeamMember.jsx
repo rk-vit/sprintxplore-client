@@ -3,7 +3,6 @@ import "./TeamMember.css";
 
 export const TeamMember = (props) => {
     const [flipped, setFlipped] = useState(false);
-    console.log(props)
     return (
         <div className="flip-container" onMouseEnter={() => setFlipped(true)} onMouseLeave={() => setFlipped(false)}>
             <div className={`Member-main ${flipped ? "flipped" : ""}`}>
