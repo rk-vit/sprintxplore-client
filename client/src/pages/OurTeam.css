@@ -1,0 +1,25 @@
+.ourTeam-main {
+    padding-top: 10px;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+}
+
+.MemberFlex {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 80%;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}

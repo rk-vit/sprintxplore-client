@@ -25,6 +25,7 @@
 
 .sec2 {
     margin-top: 4vh; /* Adds gap between sections */
+    margin-bottom: 20px;
 }
 
 .sec1-left, .sec2-right {
