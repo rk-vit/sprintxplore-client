@@ -5,6 +5,7 @@ import { AboutUs } from './pages/AboutUs'
 import { Header } from './components/Header'
 import { Info } from './pages/Info'
 import { OurTeam } from './pages/OurTeam'
+import ContactUs from './pages/ContactUs'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -25,6 +26,9 @@ function App() {
       </div>
       <div className='app-ourteam'>
         <OurTeam/>
+      </div>
+      <div className='app-contact'>
+        <ContactUs/>
       </div>
     </div>
     
