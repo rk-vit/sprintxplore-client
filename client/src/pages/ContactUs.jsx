@@ -17,7 +17,7 @@ const ContactUs = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("https://sprintxplore-server.vercel.app/contactUs", formData);
+      await axios.post("https://sprintxplore-server.vercel.appt/contactUs", formData);
       alert("Message sent successfully!");
       setFormData({ name: "", phone: "", email: "", message: "" });
     } catch (error) {

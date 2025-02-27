@@ -18,7 +18,8 @@ const transporter = nodemailer.createTransport({
   });
   
 const corsOptions = {
-    origin: "https://sprintxplore-client.vercel.app", 
+    origin: "https://sprintxplore.com", 
+    credentials: true,
     methods: "GET,POST,PUT,DELETE"
 };
 app.use(express.json());
