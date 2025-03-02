@@ -1,29 +1,133 @@
-.Hero-main{
+/* Main Section */
+.Hero-main {
      display: flex;
+     flex-direction: column;
      height: 100vh;
      width: 100vw;
-}
-
-.tagLine{
+     align-items: center;
+     justify-content: center;
+     background: linear-gradient(135deg, rgba(245, 166, 35, 0.6) 0%, rgba(231, 76, 60, 0.6) 100%), 
+                 url('/images/10161832.jpg'); /* Replace with your image */
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     text-align: center;
+     padding: 20px;
+ }
+ 
+ /* Tagline Section */
+ .tagLine h1 {
      display: flex;
      flex-direction: column;
      width: 60vw;
-     height: 100vh;
      text-align: center;
-     padding-top: 10px;
      justify-content: center;
-     font:popins;
-     font-style: italic;
-
-}
-
-
-.tagLine button{
-     color: black;
-     width: 100px;
-     height: 50px;
-     align-self: center;
-     border-radius: 10px;
-     border: 1px solid white;
+     font-family: 'Poppins', sans-serif;
+     font-size: 3rem; /* Increased size */
+     color: white;
+     font-weight: bold;
+     animation: fadeIn 1.5s ease-in-out;
+ }
+ 
+ /* Typewriter Text */
+ .typewriter-text {
+     font-size: 3rem;
+     font-weight: bold;
+     color: gold;
+     margin-top: 10px;
+     animation: slideUp 1s ease-in-out;
+ }
+ 
+ /* Button Container */
+ .tagButtons {
+     display: flex;
+     gap: 20px;
+     margin-top: 20px;
+     flex-wrap: wrap;
+     justify-content: center;
+ }
+ 
+ /* Buttons */
+ .button-tag {
      background-color: gold;
-}
+     height: 50px;
+     width: 200px;
+     border: none;
+     border-radius: 10px;
+     font-size: 1rem;
+     transition: background-color 0.4s ease, color 0.4s ease;
+ }
+ 
+ /* Button Hover Effect */
+ .button-tag:hover {
+     background: white;
+ }
+ 
+ /* Animations */
+ @keyframes fadeIn {
+     0% { opacity: 0; transform: translateY(-20px); }
+     100% { opacity: 1; transform: translateY(0); }
+ }
+ 
+ @keyframes slideUp {
+     0% { opacity: 0; transform: translateY(30px); }
+     100% { opacity: 1; transform: translateY(0); }
+ }
+ 
+ /* Responsive Design */
+ @media screen and (max-width: 768px) {
+     .Hero-main {
+         height: 100vh;
+         padding: 50px 20px;
+         background-size: cover; /* Ensures the image covers the entire section */
+         background-position: center center; /* Centers the image */
+         background-attachment: scroll; /* Prevents cropping issues on mobile */
+     }
+ 
+     .tagLine h1 {
+         font-size: 2rem; /* Reduce text size */
+         width: 90vw; /* Adjust width for better fit */
+     }
+ 
+     .typewriter-text {
+         font-size: 1.8rem; /* Reduce animated text size */
+     }
+ 
+     .tagButtons {
+         flex-direction: column; /* Stack buttons vertically */
+         gap: 15px;
+         margin-top: 15px;
+     }
+ 
+     .button-tag {
+         width: 180px;
+         height: 45px;
+         font-size: 0.9rem;
+     }
+ }
+ 
+ /* Extra Small Screens */
+ @media screen and (max-width: 480px) {
+     .Hero-main {
+          height: 100vh;
+          padding: 50px 20px;
+          background-size:cover; /* Ensures the image covers the entire section */
+          background-position: center center; /* Centers the image */
+          background-attachment: fixed; /* Prevents cropping issues on mobile */
+      }
+     .tagLine h1 {
+         font-size: 1.8rem;
+     }
+ 
+     .typewriter-text {
+         font-size: 1.5rem;
+     }
+ 
+     .button-tag {
+         width: 160px;
+         height: 40px;
+         font-size: 0.85rem;
+     }
+ }
+ 

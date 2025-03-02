@@ -1,38 +1,45 @@
-import { useState } from 'react'
-import './App.css'
-import { HeroSection } from './pages/HeroSection'
-import { AboutUs } from './pages/AboutUs'
-import { Header } from './components/Header'
-import { Info } from './pages/Info'
-import { OurTeam } from './pages/OurTeam'
-import ContactUs from './pages/ContactUs'
+import { useEffect, useState } from 'react';
+import './App.css';
+import { HeroSection } from './pages/HeroSection';
+import { AboutUs } from './pages/AboutUs';
+import { Header } from './components/Header';
+import { Info } from './pages/Info';
+import { OurTeam } from './pages/OurTeam';
+import ContactUs from './pages/ContactUs';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    console.log("useEffect ran");
+  
+    const handleScroll = () => {
+      console.log("Scrolling detected", window.scrollY);
+      setScrolled(window.scrollY > 5);
+    };
+  
+    window.addEventListener("scroll", handleScroll);
+    console.log("Scroll listener added");
+  
+    return () => {
+      console.log("Scroll listener removed");
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  
 
   return (
-    <div className='app-main'>
-      <div className='app-header'>
-        <Header/>
-      </div>
-      <div className='app-hero'>
-        <HeroSection/>
-      </div>
-      <div className='app-about'>
-        <AboutUs/>
-      </div>
-      <div className='app-info'>
-        <Info/>
-      </div>
-      <div className='app-ourteam'>
-        <OurTeam/>
-      </div>
-      <div className='app-contact'>
-        <ContactUs/>
-      </div>
+    <div className="app-main">
+      <Header scrolled={scrolled} />
+      <main style={{ minHeight: "200vh" }}> {/* Ensures scrollable content */}
+        <HeroSection />
+        <AboutUs />
+        <Info />
+        <OurTeam />
+        <ContactUs />
+      </main>
     </div>
-    
-  )
+  );
 }
 
-export default App
+export default App;
