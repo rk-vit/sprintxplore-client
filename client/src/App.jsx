@@ -34,9 +34,9 @@ function App() {
       <main style={{ minHeight: "200vh" }}> {/* Ensures scrollable content */}
         <HeroSection />
         <AboutUs />
-        <Info />
+        {/* <Info />
         <OurTeam />
-        <ContactUs />
+        <ContactUs /> */}
       </main>
     </div>
   );

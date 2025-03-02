@@ -1,37 +1,95 @@
-.about-main {
-    background-repeat: no-repeat;
-    background: white  ;
+.about-section {
+  background-color: #fffaf0;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
     height: 100vh;
+    padding-top: 20px;  
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.about-section h2{
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+  color:  #333333;
 }
 
-.text-content {
-    display: flex;
+.about-container {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  border-radius:  8px;
+  box-shadow:  0 4px 6px rgba(0, 0, 0, 0.1);;
+  transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.02);
+}
+
+.about-content {
+  flex: 1;
+}
+
+.about-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #e74c3c;
+}
+
+.about-features {
+  margin-top: 2rem;
+}
+
+.feature {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.feature-icon {
+  margin-right: 1rem;
+  background-color: rgba(245, 166, 35, 0.1);
+  border-radius: 50%;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-text h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #f5a623;
+}
+
+.feature-text p {
+  color: #666666;
+  margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+  .about-container {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 80vw;  /* Makes it 80% of viewport width */
-    height: 80vh;
-    border-radius: 10px; /* Makes it 60% of viewport height */
+    gap: 2rem;
+  }
+  .about-image,
+  .about-content {
+    width: 100%;
+  }
 }
 
-.carousel {
-    width: 100%;
-    height: 100%;
+@media (max-width: 768px) {
+  .about-content h3 {
+    font-size: 1.5rem;
+  }
 }
 
-.carousel-inner,
-.carousel-item {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-}
-
-.carousel-item svg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
