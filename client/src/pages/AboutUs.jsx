@@ -9,7 +9,7 @@ export  function AboutUs() {
 
         <div className="about-container">
           <div className="about-image">
-            <img src="https://picsum.photos/id/237/500/400" alt="About SprintXplore" width="500" height="400" />
+            <img src="/images/serial.jpg" alt="About SprintXplore" width="500" height="400" />
           </div>
 
           <div className="about-content">

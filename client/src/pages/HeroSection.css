@@ -6,8 +6,8 @@
      width: 100vw;
      align-items: center;
      justify-content: center;
-     background: linear-gradient(135deg, rgba(245, 166, 35, 0.6) 0%, rgba(231, 76, 60, 0.6) 100%), 
-                 url('/images/10161832.jpg'); /* Replace with your image */
+     background:linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(45, 45, 45, 0.8) 100%), 
+                url('/images/10161832.jpg'); /* Replace with your image */
      background-size: cover;
      background-position: center;
      background-repeat: no-repeat;
