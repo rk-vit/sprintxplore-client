@@ -6,6 +6,9 @@ import { Header } from './components/Header';
 import { Info } from './pages/Info';
 import { OurTeam } from './pages/OurTeam';
 import ContactUs from './pages/ContactUs';
+import VisionMission from './pages/VisionMission';
+import OurCourses from './pages/OurCourses';
+import Testimonials from './pages/Testimonial';
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -34,6 +37,11 @@ function App() {
       <main style={{ minHeight: "200vh" }}> {/* Ensures scrollable content */}
         <HeroSection />
         <AboutUs />
+        <VisionMission/>
+        <OurCourses/>
+        <OurTeam/>
+        <Testimonials/>
+        <ContactUs/>
         {/* <Info />
         <OurTeam />
         <ContactUs /> */}

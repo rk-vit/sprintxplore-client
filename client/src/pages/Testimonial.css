@@ -1,0 +1,139 @@
+.testimonials-section {
+    background-color: var(--light-background);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .testimonials-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto 4rem;
+    overflow: hidden;
+  }
+  
+  .testimonials-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .testimonial-card {
+    min-width: 100%;
+    padding: 0 1rem;
+  }
+  
+  .testimonial-content {
+    background-color: var(--background-color);
+    padding: 2.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+  }
+  
+  .quote-icon {
+    color: var(--primary-color);
+    opacity: 0.3;
+    margin-bottom: 1.5rem;
+  }
+  
+  .testimonial-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+    font-style: italic;
+  }
+  
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+  }
+  
+  .author-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+  }
+  
+  .author-info h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+    color: var(--text-color);
+  }
+  
+  .author-info p {
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+    margin-bottom: 0;
+  }
+  
+  .testimonial-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+  }
+  
+  .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--border-color);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .dot.active {
+    background-color: var(--secondary-color);
+    transform: scale(1.2);
+  }
+  
+  .testimonials-stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    background-color: var(--background-color);
+    padding: 3rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+  }
+  
+  .testimonials-stats .stat-item {
+    text-align: center;
+  }
+  
+  .testimonials-stats .stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  .testimonials-stats .stat-text {
+    font-size: 1rem;
+    color: var(--light-text-color);
+  }
+  
+  @media (max-width: 768px) {
+    .testimonial-content {
+      padding: 1.5rem;
+    }
+  
+    .testimonial-text {
+      font-size: 1rem;
+    }
+  
+    .testimonials-stats {
+      padding: 2rem;
+      gap: 1.5rem;
+    }
+  
+    .testimonials-stats .stat-number {
+      font-size: 2rem;
+    }
+  }
+  
+  
