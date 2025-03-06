@@ -9,7 +9,7 @@ export const Header = ({ scrolled }) => {
     return (
         <div className={`header-main ${scrolled ? "scrolled" : ""}`}>
             <div className="left">
-                <img src="images/logo.svg" alt="Logo" />
+                <img src={scrolled?"images/logo.svg":"LogoDark.svg"} alt="Logo" />
             </div>
 
             {/* Desktop Navigation */}

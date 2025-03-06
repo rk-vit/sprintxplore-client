@@ -42,9 +42,6 @@ function App() {
         <OurTeam/>
         <Testimonials/>
         <ContactUs/>
-        {/* <Info />
-        <OurTeam />
-        <ContactUs /> */}
       </main>
     </div>
   );
